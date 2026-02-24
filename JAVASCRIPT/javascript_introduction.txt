@@ -1,0 +1,9 @@
+javascript is a cross-platform object with scriptive language () for client and srver
+applitication , run at justin time compitaltion. 
+used for both development for frount end and back end.
+high level and multiperpose .
+
+feature-1 . extend the functionality of webpage
+feature-2 . control webpage elements
+3 . object oriented
+igmascript -: to be remember
