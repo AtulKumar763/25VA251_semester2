@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var data type</title>
+</head>
+<body>
+    <script>
+        //js Data variable value type in js
+        //primitive single value variable which are immutable 
+        //string ,number,boolean,undefined,Null,Biggest,Symbol 
+
+        var myName = "atul kummar";
+        console.log(myName);
+        console.log(typeof(myName));
+
+        //number
+        var myMob = 39487590823;
+        console.log(myMob);
+
+        console.log(myName + " moblie number is : " + myMob);
+
+        //Boolean
+        var isMarried = false;
+        console.log(myName + " is married ? " + isMarried);
+ 
+        //undefined 
+        var myEmail ;
+        console.log(myEmail);
+        console.log(typeof(myEmail));
+
+        // null 
+        var myaddress = null;
+           console.log(myaddress);
+              console.log(typeof(myaddress));
+
+              // Bigint 
+
+              var myVal = 530648023843;
+                 console.log(myVal);
+                    console.log(typeof(myVal));
+
+                    
+              var myVal = BigInt(530999993843);
+                 console.log(myVal);
+                    console.log(typeof(myVal));
+
+                    var name1 = "atulkumar";
+                    var name2 = "atulkumar";
+                    console.log(name1 == name2);
+
+                    //Refrence (object) typed == mutable in memory and keeps values in pair
+                    //objecct,function ,array ;
+                    // object are defined in pair of keys and its values ;
+
+                    let myInfo = {
+                        name : "paplu" ,age : 20, isMarried : false,add : null,branch : "CSE",section : 15
+                    }
+                    console.log(myInfo);
+                      console.log(myInfo.name); //access object's key i.e name;
+
+
+                      // object length();
+                      
+                      //funnction  - block of code that performs particular task 
+         
+                      
+            function call(){
+                   var num1 = 45;
+                   var num2  = 40;
+
+                   var res = num1 + num2;
+                     console.log("Addition of two numbwers is : " + res);
+                       console.log(typeof(call));
+            }          
+            call();
+
+            //array - collection of any data type in JS ;
+            //for similar data type;
+
+            let studentList = ["paplu","comu","chomu","monu"];
+              console.log(studentList[1]);
+
+              //for any data type 
+            
+            let papluinfo = ["atul",20,false,null,"cse",18];
+              console.log(papluinfo[1]);
+                console.log(typeof(papluinfo));
+
+                //to iterate array member;
+                for(let i =0; i <papluinfo.length;i++){
+                      console.log(papluinfo[i]);
+                }
+
+
+    </script>
+    
+</body>
+</html>
