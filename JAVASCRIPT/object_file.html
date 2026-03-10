@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object JS</title>
+</head>
+<body>
+    <script>
+    //object in js : collecction(pair) of keys(properties) and its values
+
+    // create an objecct using literal way ..
+
+    let student = {
+        name : "atul",
+       
+        address :{
+          streetNO : 24,
+          area : "mzn",
+          city : "mzn",
+          pincode : 251306
+        },
+         course : "BTech",
+        sec : 15,
+        adNO : "2025B01010289",
+        passingyear : 2029,
+        isMarried : false,
+       getInfo:function(){
+        return "Myedu. detail is " + student.course + " " + student.passingyear;
+       },
+       subj: ["math","hindi","sst","english"]
+        
+    };
+    console.log(student);
+    console.log(typeof(student));
+    console.log(student.address.pincode); //object
+    console.log(student.subj[2]) //array
+
+    //to find any key in our student object
+    console.log("name" in student);
+    console.log(delete student.name);
+    console.log("name" in student);
+
+    //find length of object 
+    let keylength = Object.keys(student);
+    console.log(keylength.length);
+
+    //iterate through the object
+
+    for(let i = 0; i < keylength; i++){
+        console.log(student[keylength[i]]);
+    }
+    
+    //using for in loop 
+    for(const key in student){
+        console.log(student[key]);
+    }
+      </script>
+</body>
+</html>
