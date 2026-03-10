@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in Js</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //Loop - execute a  block of code repetadily !!
+
+
+    //For Loop.....
+    let lang = ["Js", "Python", "Cpp", "Ruby", "C#", "TS", "Java", ".NET" ]
+
+    for (let i = 0; i < lang.length; i++) {
+        console.log(lang[i]);  
+    }
+
+    //while loop
+    let i = 0;
+    while(i < lang.length){
+        console.log(lang[i]); 
+        i++;
+    }
+
+    // for  of loop
+    // element is index 
+    for(const element of  lang){
+        console.log(element);
+    }
+
+    //for in loop
+    // key is index
+    for(const key in lang){
+        console.log(lang[key]);
+    }
+</script>
+</html>
