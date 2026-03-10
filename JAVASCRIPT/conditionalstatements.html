@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements in JS</title>
+</head>
+<body>
+    <script>
+        //condtitional statement --- controls the flow of execution of program allowing the program to execute the code based on condition is true or false
+
+        // if..........
+
+        let age = 23;
+        if(age => 18){
+            console.log("you are eligible");
+        }else{
+            console.log("yoou are not eligible");
+        }
+     
+
+        //switch case
+
+        let grade = 50;
+        switch(grade){
+            case 60 : result = "pass";
+            break;
+            case 50 : result = "fail";
+            break;
+            default : result = "provide the marks";
+            break;
+
+        }
+        console.log(result);
+
+        let marks = 40;
+        if(marks >= 90){
+            console.log("pass wwith 3rd grade ");
+
+        }else if(marks >= 80 && marks <= 90){
+            consloe.log("pass with 2nd grade");
+        }else{
+            consloe.log("student fail with negative marks !!");
+        }
+        
+    </script>
+</body>
+</html>
