@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function IN JS</title>
+</head>
+<body>
+  <script>
+    //function:- block of codes,designed to perform a particular task.
+    // types of function:- with parameter and without parameter.
+
+    //normal function
+    function demo(){
+        console.log("Hello JS");
+    }
+    demo(); //function calling
+    //function with parameter
+    function demo1(text){
+        console.log("Hello " + text);
+    }
+    demo1("React");
+    //function with default parameter
+    function add(a,b=45){
+        var num1=a;
+        var num2=b;
+        var res=num1+num2;
+        console.log("Addition of two number is "+ res);
+    }
+    add(34);
+    //synchronous and asynchronous function
+
+    function cal(){
+        function  add(a,b){
+            console.log("Addition of two number is "+ (a+b));
+        }
+        function sub(x,y){
+            console.log("Subtraction of two numbers is "+(x-y));
+        }
+        function mul(p,q){
+            console.log("Multiplication of two numbers is "+(p*q));
+        }
+        mul(9,6);
+        sub(5,7);
+        add(9,10);
+
+    }
+    cal();
+    //anonymous function in js: function that does not have a name and is often used as an argument to other functions or assigned to variables.
+
+    let msg=function(){
+        console.log("Hello ABES");
+    }
+    msg();
+    //short code for above function
+    let msg1=()=>console.log("Hello React");
+    msg1();
+    //arrow function with mmultiple lines
+    let msg2=(age)=>{
+        if(age>=18){
+            console.log("Valid Age");
+        }
+        else{
+        console.log("Minor Age");
+    }
+}
+    msg2(67);
+
+    //callback function in js
+
+    function cal(a,b){
+        var num1=a;
+        console.log("First number is "+ num1);
+        var num2=b;
+        console.log("Second number is "+ num2);
+        var res=num1+num2;
+    }
+    function display(){
+        console.log("Addition of two number is "+ result);
+    }
+    cal(5,10);
+    display(15);
+
+
+    function greeting(){
+        document.writeln("Hello Student")
+    }
+    loading();
+    setTimeout(greeting,2000);
+
+    //call back hell;
+    //
+    //
+    // asyn funnction userData(){
+    //   let userR
+    // } 
+  </script>  
+</body>
+</html>
