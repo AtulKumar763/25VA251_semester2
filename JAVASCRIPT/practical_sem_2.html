@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practical_semester_2</title>
+</head>
+<body>
+
+<h1 id="heading">CLICK ME !!</h1>
+
+<script>
+    let heading = document.getElementById("heading");
+
+    // Mouse Over Event
+    heading.addEventListener("mouseover", function() {
+        heading.innerText = "ATUL KUMAR";
+        heading.style.backgroundColor = "orange";
+        heading.style.fontSize = "40px";
+    });
+
+    // Mouse Out Event
+    heading.addEventListener("mouseout", function() {
+        heading.innerText = "CLICK ME !!";
+        heading.style.backgroundColor = "white";
+        heading.style.fontSize = "24px";
+    });
+</script>
+
+</body>
+</html>
